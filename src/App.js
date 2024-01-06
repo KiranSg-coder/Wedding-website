@@ -12,10 +12,7 @@ function App() {
   return (
     <div>
       <NavBar />
-      {/* <Carouselpage /> */}
-      <div >
-        <Header />
-      </div>
+      <Header />
       <Intro />
       <Banner />
       <Friend />
