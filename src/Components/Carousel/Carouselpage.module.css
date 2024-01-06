@@ -1,13 +1,10 @@
 /* Carouselpage.css */
 
-
-
 .wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    position: absolute;
     height: 82%;
 }
 
@@ -16,12 +13,12 @@
 .date,
 .banner {
     font-family: 'Pacifico', cursive;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
 }
 
 .save {
     font-size: 75px;
-    line-height: 50px;
+    line-height: 30px;
 }
 
 .the_date {
@@ -40,25 +37,20 @@
 .banner h4 {
     font-size: 38px;
     color: white;
-    /* Adjust the color as needed */
+
     justify-content: center;
     margin: 0;
 }
 
 .curve {
-    /* transform: rotate(-20deg); */
+
     padding-bottom: 80px;
     font-family: 'Pacifico', cursive;
     -ms-transform: rotate(-10deg);
-    /* IE 9 */
-    -webkit-transform: rotate(-10deg);
-    /* Chrome, Safari, Opera */
-    transform: rotate(-10deg);
-    /* padding-top:100px;
-	padding-right:50px;
-	margin-bottom:20px; */
-}
 
-.color {
-    color: #f0394d;
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+
+    padding-right: 50px;
+
 }

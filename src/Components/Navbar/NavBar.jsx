@@ -44,30 +44,63 @@ const Navbar = () => {
       <NavContainer>
         <nav className={scrolled ? "nav scroll" : "nav"}>
           <div className="navbar">
-            {/* <Logo>
-              <img src="image/logo.png " alt="logo" />
-            </Logo> */}
             <ul className={click ? "nav__menu active" : "nav__menu"}>
               <li>
-                <a href="#home">Home</a>
+                <a href="#home" style={{ fontSize: "15px" }}>
+                  HOME
+                </a>
               </li>
               <li>
-                <a href="#couple">Couple</a>
+                <a href="#couple" style={{ fontSize: "15px" }}>
+                  ABOUT
+                </a>
               </li>
               <li>
-                <a href="#ourStory">Our Story</a>
+                <a href="#ourStory" style={{ fontSize: "15px" }}>
+                  GALLERY
+                </a>
               </li>
               <li>
-                <a href="#event">Event</a>
+                <a href="#event" style={{ fontSize: "15px" }}>
+                  THE-STORY
+                </a>
+              </li>
+
+              <li
+                style={{
+                  width: "60px",
+                  height: "60px",
+                  borderRadius: "100%",
+                  backgroundColor: "#f0394d",
+                  color: "#fff",
+                  textAlign: "center",
+                  lineHeight: "60px",
+                }}
+              >
+                <a href="#event" style={{ fontSize: "15px" }}>
+                  G D
+                </a>
+              </li>
+
+              <li>
+                <a href="#friend" style={{ fontSize: "15px" }}>
+                  THE-WEDDING
+                </a>
               </li>
               <li>
-                <a href="#friend">Friends</a>
+                <a href="#gallery" style={{ fontSize: "15px" }}>
+                  BLOG
+                </a>
               </li>
               <li>
-                <a href="#gallery">Gallery</a>
+                <a href="#gallery" style={{ fontSize: "15px" }}>
+                  PAGE
+                </a>
               </li>
               <li>
-                <a href="#rsvp">R.S.V.P</a>
+                <a href="#rsvp" style={{ fontSize: "15px" }}>
+                  R.S.V.P
+                </a>
               </li>
             </ul>
             <MenuBar onClick={handleClick}>
@@ -86,32 +119,37 @@ const Navbar = () => {
           <ul>
             <li>
               <a href="#home" class="mobile__item">
-                Home
+                HOME
               </a>
             </li>
             <li>
               <a href="#couple" class="mobile__item">
-                Couple
+                ABOUT
               </a>
             </li>
             <li>
               <a href="#ourStory" class="mobile__item">
-                Our Story
+                GALLERY
               </a>
             </li>
             <li>
               <a href="#event" class="mobile__item">
-                Event
+                THE STORY
               </a>
             </li>
             <li>
               <a href="#friend" class="mobile__item">
-                Friends
+                THE WEDDING
               </a>
             </li>
             <li>
               <a href="#gallery" class="mobile__item">
-                Gallery
+                BLOG
+              </a>
+            </li>
+            <li>
+              <a href="#rsvp" class="mobile__item">
+                PAGE
               </a>
             </li>
             <li>
@@ -149,11 +187,6 @@ const BacktoTop = styled.div`
     display: none;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
       rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-
-    img {
-      width: 27px;
-      transform: rotate(-90deg);
-    }
   }
 
   .top.active {
@@ -195,7 +228,7 @@ const NavContainer = styled.div`
   .navbar {
     max-width: 1140px;
     margin: 0 auto;
-    padding: 40px;
+    padding: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -203,10 +236,11 @@ const NavContainer = styled.div`
 
   .nav__menu {
     display: flex;
+    justify-content: space-between;
 
     li {
       list-style: none;
-      margin-left: 20px;
+      margin-left: 50px;
 
       a {
         text-decoration: none;
@@ -221,17 +255,6 @@ const NavContainer = styled.div`
 
     @media (max-width: 920px) {
       display: none;
-    }
-  }
-`;
-
-const Logo = styled.div`
-  img {
-    display: none;
-
-    @media (min-width: 920px) {
-      width: 50px;
-      display: block;
     }
   }
 `;
@@ -292,7 +315,7 @@ const MenuBar = styled.div`
 
   @media (max-width: 920px) {
     display: block;
-    background: #cb966a;
+    background: pink;
     padding: 1rem;
     width: 50px;
     height: 50px;

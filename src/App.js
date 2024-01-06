@@ -12,7 +12,7 @@ function App() {
   return (
     <div>
       <NavBar />
-      <Header />
+      <Carouselpage />
       <Intro />
       <Banner />
       <Friend />
