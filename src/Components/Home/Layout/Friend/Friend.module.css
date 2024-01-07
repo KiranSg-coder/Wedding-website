@@ -1,0 +1,12 @@
+.text>h1 {
+    font-size: 54px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+
+}
+
+.image {
+    margin: auto;
+}

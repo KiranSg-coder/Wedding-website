@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
-import exampleImage1 from "../../Assets/slide-image-1920-d.jpg"; // Import your image files
-import exampleImage2 from "../../Assets/slide-image-1920-f.jpg";
-import exampleImage3 from "../../Assets/slide-image-1920-h.jpg";
+import exampleImage1 from "../../../../Assets/slide-image-1920-d.jpg"; // Import your image files
+import exampleImage2 from "../../../../Assets/slide-image-1920-f.jpg";
+import exampleImage3 from "../../../../Assets/slide-image-1920-h.jpg";
 import { CarouselCaption } from "react-bootstrap";
-import "./Carouselpage.module.css";
+// import "./Carouselpage.module.css";
 import styles from "./Carouselpage.module.css";
 
 function Carouselpage() {

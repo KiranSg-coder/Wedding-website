@@ -19,12 +19,21 @@ const Footer = () => {
         style={{
           display: "flex",
           justifyContent: "center",
-          marginBottom: "180px",
+          marginBottom: "20px", // Adjusted margin for better spacing
         }}
       >
         Please reserve before June 19th, 2015. Lorem ipsum dolor sit amet,
         consectetur adipiscing
       </p>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginBottom: "180px",
+        }}
+      >
+        <button className={styles.rsvpButton}>RSVP</button>
+      </div>
 
       <div className={styles.Container}>
         <div className={styles.header__content}>

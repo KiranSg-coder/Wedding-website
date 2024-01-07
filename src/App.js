@@ -1,22 +1,21 @@
 import './App.css';
-import NavBar from './Components/Navbar/NavBar';
-import Carouselpage from './Components/Carousel/Carouselpage';
-import Intro from './Components/Intro/Intro';
-import Header from './Components/Hero/Hero';
-import Banner from './Components/Banner-1/BannerOne';
-import Footer from './Components/Footer/Footer';
+import React from 'react';
+import Home from "./Components/Home/Home";
+// import About from "./Components/About";
+// import NavBar from "./Components/About/NavBar/NavBar";
+// import Header from './Components/About/Header/Header';
+// import Main from './Components/About/Main/Main';
+// import Footer from './Components/About/Footer-1/Footer';
 
-import Friend from './Components/Friend/Friend';
 
 function App() {
   return (
     <div>
-      <NavBar />
-      <Carouselpage />
-      <Intro />
-      <Banner />
-      <Friend />
-      <Footer />
+      <Home />
+      {/* <NavBar />
+      <Header />
+      <Main />
+      <Footer /> */}
     </div>
   );
 }

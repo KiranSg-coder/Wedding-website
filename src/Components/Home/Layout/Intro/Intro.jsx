@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import him from "../../Assets/him2.jpg";
-import her from "../../Assets/her2.jpg";
+import him from "../../../../Assets/him2.jpg";
+import her from "../../../../Assets/her2.jpg";
 import "./Intro.module.css";
 
 const Intro = () => {

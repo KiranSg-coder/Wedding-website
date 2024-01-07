@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import styles from "./Friend.module.css";
-import image1 from "../../Assets/accomodation.jpg";
-import image2 from "../../Assets/the-wedding-1a.jpg";
-import image3 from "../../Assets/the-wedding-4a.jpg";
+import image1 from "../../../../Assets/accomodation.jpg";
+import image2 from "../../../../Assets/the-wedding-1a.jpg";
+import image3 from "../../../../Assets/the-wedding-4a.jpg";
 
 const Friend = () => {
   return (
