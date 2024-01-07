@@ -35,11 +35,11 @@ const Intro = () => {
               </div>
             </div>
             <p>
-              I'm Gerrard Leandro. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Integer ultrices malesuada ante quis pharetra.
-              Nullam non bibendum dolor. Ut vel turpis accumsan, efficitur dolor
-              fermentum, tincidunt metus. Etiam ut ultrices nibh. Etiam aliquam
-              mauris non hendrerit faucibus. Proin pulvinar.
+              <strong> I'm Gerrard Leandro.</strong> Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Integer ultrices malesuada ante quis
+              pharetra. Nullam non bibendum dolor. Ut vel turpis accumsan,
+              efficitur dolor fermentum, tincidunt metus. Etiam ut ultrices
+              nibh. Etiam aliquam mauris non hendrerit faucibus. Proin pulvinar.
             </p>
           </div>
           <div className="box">
@@ -54,11 +54,11 @@ const Intro = () => {
               </div>
             </div>
             <p>
-              I'm Dianne Anna. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Integer ultrices malesuada ante quis pharetra.
-              Nullam non bibendum dolor. Ut vel turpis accumsan, efficitur dolor
-              fermentum, tincidunt metus. Etiam ut ultrices nibh. Etiam aliquam
-              mauris non hendrerit faucibus. Proin pulvinar.
+              <strong>I'm Dianne Anna.</strong> Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Integer ultrices malesuada ante quis
+              pharetra. Nullam non bibendum dolor. Ut vel turpis accumsan,
+              efficitur dolor fermentum, tincidunt metus. Etiam ut ultrices
+              nibh. Etiam aliquam mauris non hendrerit faucibus. Proin pulvinar.
             </p>
           </div>
         </Box>
@@ -97,6 +97,7 @@ const Box = styled.div`
       font-size: 0.9rem;
       font-weight: 500;
       line-height: 1.4rem;
+      text-align: left;
     }
 
     .image-container {

@@ -21,19 +21,19 @@ const Main = () => {
               <div className="image-wrapper"></div>
             </div>
             <p>
-              I'm Gerrard Leandro. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Fusce urna urna, imperdiet et purus ut, ultricies
-              sollicitudin arcu. Cras placerat, arcu non faucibus suscipit, ex
-              arcu consectetur enim, eu malesuada magna turpis sit amet mauris.
-              Nullam nec leo at lorem interdum commodo. Etiam mollis massa in
-              mauris lacinia porta. Pellentesque tristique, ante nec dictum
-              mollis, felis ligula ullamcorper velit, ac auctor est ipsum
-              vehicula ex. Donec eu blandit est, id gravida justo. Maecenas
-              laoreet laoreet congue. Cras sit amet vestibulum ligula. Ut nec
-              erat tristique, iaculis purus ac, pellentesque mi. Donec ac cursus
-              est. Nunc id varius enim, ut tincidunt mi. Integer non est eros.
-              Aliquam ex magna, elementum at dignissim vitae, placerat quis
-              ante. <br /> Morbi a condimentum quam. Nullam quis quam at ex
+              <strong>I'm Gerrard Leandro.</strong> Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Fusce urna urna, imperdiet et purus
+              ut, ultricies sollicitudin arcu. Cras placerat, arcu non faucibus
+              suscipit, ex arcu consectetur enim, eu malesuada magna turpis sit
+              amet mauris. Nullam nec leo at lorem interdum commodo. Etiam
+              mollis massa in mauris lacinia porta. Pellentesque tristique, ante
+              nec dictum mollis, felis ligula ullamcorper velit, ac auctor est
+              ipsum vehicula ex. Donec eu blandit est, id gravida justo.
+              Maecenas laoreet laoreet congue. Cras sit amet vestibulum ligula.
+              Ut nec erat tristique, iaculis purus ac, pellentesque mi. Donec ac
+              cursus est. Nunc id varius enim, ut tincidunt mi. Integer non est
+              eros. Aliquam ex magna, elementum at dignissim vitae, placerat
+              quis ante. <br /> Morbi a condimentum quam. Nullam quis quam at ex
               eleifend feugiat. Vivamus lacinia quam quam, ac viverra turpis
               pellentesque in. Mauris sollicitudin sapien risus, non sagittis
               velit dictum eget. Suspendisse velit lacus, pulvinar non ante
@@ -98,6 +98,7 @@ const Box = styled.div`
       font-size: 0.9rem;
       font-weight: 500;
       line-height: 1.4rem;
+      text-align: left;
     }
 
     .image-container {

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import arrow from "../../../Assets/arow.png";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -48,14 +49,15 @@ const Navbar = () => {
           <div className="navbar">
             <ul className={click ? "nav__menu active" : "nav__menu"}>
               <li>
-                <a href="#home" style={{ fontSize: "12px" }}>
+                <a href="#home" style={{ fontSize: "13px" }}>
                   HOME{" "}
                   <FontAwesomeIcon
                     icon={faHeart}
                     style={{
-                      fontSize: "8px",
+                      fontSize: "10px",
                       marginLeft: "6px",
                       color: "#f0394d",
+                      marginLeft: "20px",
                     }}
                   />
                 </a>
@@ -66,9 +68,10 @@ const Navbar = () => {
                   <FontAwesomeIcon
                     icon={faHeart}
                     style={{
-                      fontSize: "8px",
+                      fontSize: "10px",
                       marginLeft: "6px",
                       color: "#f0394d",
+                      marginLeft: "20px",
                     }}
                   />
                 </a>
@@ -79,9 +82,10 @@ const Navbar = () => {
                   <FontAwesomeIcon
                     icon={faHeart}
                     style={{
-                      fontSize: "8px",
+                      fontSize: "10px",
                       marginLeft: "6px",
                       color: "#f0394d",
+                      marginLeft: "20px",
                     }}
                   />
                 </a>
@@ -92,7 +96,7 @@ const Navbar = () => {
                   <FontAwesomeIcon
                     icon={faHeart}
                     style={{
-                      fontSize: "8px",
+                      fontSize: "10px",
                       marginLeft: "6px",
                       color: "#f0394d",
                     }}
@@ -109,6 +113,9 @@ const Navbar = () => {
                   color: "#fff",
                   textAlign: "center",
                   lineHeight: "30px",
+                  justifyContent: "center",
+                  // paddingBottom: "20px",
+                  display: "inline",
                 }}
               >
                 <a
@@ -116,10 +123,23 @@ const Navbar = () => {
                   style={{
                     fontSize: "15px",
                     textAlign: "center",
-                    lineHeight: "60px",
+                    lineHeight: "50px",
+                    color: "white",
                   }}
                 >
-                  G D
+                  G
+                  <FontAwesomeIcon
+                    icon={faHeart}
+                    style={{
+                      fontSize: "14px",
+                      marginLeft: "3px",
+                      marginRight: "3px",
+                      color: "white",
+                      // display:"flex",
+                      justifyContent: "center",
+                    }}
+                  />
+                  D
                 </a>
               </li>
 
@@ -129,9 +149,10 @@ const Navbar = () => {
                   <FontAwesomeIcon
                     icon={faHeart}
                     style={{
-                      fontSize: "8px",
+                      fontSize: "10px",
                       marginLeft: "6px",
                       color: "#f0394d",
+                      marginLeft: "15px",
                     }}
                   />
                 </a>
@@ -142,9 +163,10 @@ const Navbar = () => {
                   <FontAwesomeIcon
                     icon={faHeart}
                     style={{
-                      fontSize: "8px",
+                      fontSize: "10px",
                       marginLeft: "6px",
                       color: "#f0394d",
+                      marginLeft: "5px",
                     }}
                   />
                 </a>
@@ -215,7 +237,7 @@ const Navbar = () => {
       </Mobile>
       <BacktoTop>
         <button className={visible ? "top active" : "top"} onClick={scrollTop}>
-          <img src="image/arrow.png" alt="arrow" />
+          <img src={arrow} alt="arrow" />
         </button>
       </BacktoTop>
     </>
@@ -281,7 +303,7 @@ const NavContainer = styled.div`
   .navbar {
     max-width: 1140px;
     margin: 0 auto;
-    padding: 30px;
+    padding: 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -297,11 +319,11 @@ const NavContainer = styled.div`
 
       a {
         text-decoration: none;
-        color: Black;
+        color: black;
         transition: all 0.6s ease;
 
         &:hover {
-          color: #f0394d;
+          color: #cb966a;
         }
       }
     }
