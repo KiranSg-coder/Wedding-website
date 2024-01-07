@@ -5,7 +5,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 82%;
+    height: 100vh;
+
 }
 
 .save,
@@ -13,44 +14,52 @@
 .date,
 .banner {
     font-family: 'Pacifico', cursive;
-    margin-bottom: 50px;
+    margin: auto;
+
 }
 
 .save {
-    font-size: 75px;
-    line-height: 30px;
+    font-size: 65px;
+    line-height: 1;
+
 }
 
 .the_date {
-    font-size: 62px;
+    font-size: 52px;
 }
 
 .date {
-    font-size: 47px;
-    line-height: 40px;
+    font-size: 37px;
+    line-height: 1.2;
+
 }
 
-.pink_dot {
+.color {
     color: #f0394d;
 }
 
 .banner h4 {
-    font-size: 38px;
+    font-size: 18px;
     color: white;
+    margin: 20px 0;
+    letter-spacing: 3px;
 
-    justify-content: center;
+}
+
+.banner hr {
+    border-top: medium double #fff;
+    border-top-color: rgb(255, 255, 255);
+    width: 100%;
     margin: 0;
+
+    /* Adjusted margin to 0 */
 }
 
 .curve {
-
     padding-bottom: 80px;
     font-family: 'Pacifico', cursive;
     -ms-transform: rotate(-10deg);
-
     -webkit-transform: rotate(-10deg);
     transform: rotate(-10deg);
-
     padding-right: 50px;
-
 }

@@ -25,7 +25,11 @@ const Friend = () => {
         <Box>
           <Bride>
             <div className="box">
-              <img src={image2} alt="image" />
+              <div className="image-container">
+                <div className="image-wrapper">
+                  <img src={image2} alt="image" />
+                </div>
+              </div>
               <h2>LOCATION</h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
@@ -33,7 +37,11 @@ const Friend = () => {
               </p>
             </div>
             <div className="box">
-              <img src={image3} alt="image" />
+              <div className="image-container">
+                <div className="image-wrapper">
+                  <img src={image3} alt="image" />
+                </div>
+              </div>
               <h2>GIFT REGISTRY</h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
@@ -41,7 +49,11 @@ const Friend = () => {
               </p>
             </div>
             <div className="box">
-              <img src={image1} alt="Women" />
+              <div className="image-container">
+                <div className="image-wrapper">
+                  <img src={image1} alt="Women" />
+                </div>
+              </div>
               <h2>ACCOMODATION</h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
@@ -78,54 +90,66 @@ const FriendsContainer = styled.div`
 
 const Box = styled.div``;
 const Bride = styled.div`
+display: grid;
+grid-gap: 2em;
+
+@media (min-width: 1020px) {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 2em;
+}
+@media (max-width: 920px) {
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 600px) {
+  grid-template-columns: repeat(1, 1fr);
+}
 
-  @media (min-width: 1020px) {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2em;
-  }
-  @media (max-width: 920px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  @media (max-width: 600px) {
-    grid-template-columns: repeat(1, 1fr);
-  }
+.box {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  // border: 1px solid white;
+  background: #fff;
+  // text-align: center;
 
-  .box {
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    // border: 1px solid white;
-    background: #fff;
-    // text-align: center;
-
-    h2 {
-      font-size: 1.3rem;
-      font-weight: 500;
-      padding: 1rem;
-      margin: 1rem 0 0.5rem 0;
+  h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 1rem;
+    margin: 1rem 0 0.5rem 0;
+  }
+  p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 1rem;
+    line-height: 1.4rem;
+  }
+  .image-container {
+      width: 100%;
+      border: 1px solid white;
+      overflow: hidden; /* Add overflow property to hide overflowing content */
     }
-    p {
-      font-size: 0.9rem;
-      font-weight: 500;
-      padding: 1rem;
-      line-height: 1.4rem;
-    }
 
-    img {
+    .image-container {
+      border: 1px solid white;
+    }
     
-        width: 100%;
-        border: 1px solid white;
-        display: block !important;
-        // display: block;
-        transition: all 0.3s;
-      }
-
-      img:hover {
-        
-        filter: brightness(50%);
-        transform: scale(1.05);
-        cursor: pointer;
-        
-      }
+    .image-wrapper {
+      margin: -1px; /* Adjust this value to control the size of the white line */
+      overflow: hidden;
+    }
+  img {
+      width: 100%;
+      border: 1px solid white;
+      display: block !important;
+      transition: all 0.3s;
+      margin: auto;
+    }
+    
+    img:hover {
+      filter: brightness(50%);
+      transform: scale(1.05);
+      cursor: pointer;
+      border: 2px solid red; /* Add border on hover */
+    }
+    
 `;

@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -46,57 +48,108 @@ const Navbar = () => {
           <div className="navbar">
             <ul className={click ? "nav__menu active" : "nav__menu"}>
               <li>
-                <a href="#home" style={{ fontSize: "15px" }}>
-                  HOME
+                <a href="#home" style={{ fontSize: "12px" }}>
+                  HOME{" "}
+                  <FontAwesomeIcon
+                    icon={faHeart}
+                    style={{
+                      fontSize: "8px",
+                      marginLeft: "6px",
+                      color: "#f0394d",
+                    }}
+                  />
                 </a>
               </li>
               <li>
                 <a href="#couple" style={{ fontSize: "15px" }}>
                   ABOUT
+                  <FontAwesomeIcon
+                    icon={faHeart}
+                    style={{
+                      fontSize: "8px",
+                      marginLeft: "6px",
+                      color: "#f0394d",
+                    }}
+                  />
                 </a>
               </li>
               <li>
                 <a href="#ourStory" style={{ fontSize: "15px" }}>
-                  GALLERY
+                  GALLERY{" "}
+                  <FontAwesomeIcon
+                    icon={faHeart}
+                    style={{
+                      fontSize: "8px",
+                      marginLeft: "6px",
+                      color: "#f0394d",
+                    }}
+                  />
                 </a>
               </li>
               <li>
                 <a href="#event" style={{ fontSize: "15px" }}>
-                  THE-STORY
+                  THE-STORY{" "}
+                  <FontAwesomeIcon
+                    icon={faHeart}
+                    style={{
+                      fontSize: "8px",
+                      marginLeft: "6px",
+                      color: "#f0394d",
+                    }}
+                  />
                 </a>
               </li>
 
               <li
                 style={{
-                  width: "60px",
-                  height: "60px",
+                  width: "50px",
+                  height: "50px",
                   borderRadius: "100%",
                   backgroundColor: "#f0394d",
                   color: "#fff",
                   textAlign: "center",
-                  lineHeight: "60px",
+                  lineHeight: "30px",
                 }}
               >
-                <a href="#event" style={{ fontSize: "15px" }}>
+                <a
+                  href="#event"
+                  style={{
+                    fontSize: "15px",
+                    textAlign: "center",
+                    lineHeight: "60px",
+                  }}
+                >
                   G D
                 </a>
               </li>
 
               <li>
                 <a href="#friend" style={{ fontSize: "15px" }}>
-                  THE-WEDDING
+                  THE-WEDDING{" "}
+                  <FontAwesomeIcon
+                    icon={faHeart}
+                    style={{
+                      fontSize: "8px",
+                      marginLeft: "6px",
+                      color: "#f0394d",
+                    }}
+                  />
                 </a>
               </li>
               <li>
                 <a href="#gallery" style={{ fontSize: "15px" }}>
-                  BLOG
+                  BLOG{" "}
+                  <FontAwesomeIcon
+                    icon={faHeart}
+                    style={{
+                      fontSize: "8px",
+                      marginLeft: "6px",
+                      color: "#f0394d",
+                    }}
+                  />
                 </a>
               </li>
-              <li>
-                <a href="#gallery" style={{ fontSize: "15px" }}>
-                  PAGE
-                </a>
-              </li>
+
               <li>
                 <a href="#rsvp" style={{ fontSize: "15px" }}>
                   R.S.V.P
@@ -228,7 +281,7 @@ const NavContainer = styled.div`
   .navbar {
     max-width: 1140px;
     margin: 0 auto;
-    padding: 50px;
+    padding: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
