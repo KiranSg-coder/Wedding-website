@@ -3,8 +3,15 @@ import styled from "styled-components";
 import him from "../../../../Assets/him2.jpg";
 import her from "../../../../Assets/her2.jpg";
 import "./Intro.module.css";
+import { useNavigate } from "react-router-dom";
 
 const Intro = () => {
+  let navigate = useNavigate();
+
+  function handleClick() {
+    navigate("/about");
+  }
+
   return (
     <IntroHeader>
       <h1>The Happy Couple</h1>
@@ -20,6 +27,11 @@ const Intro = () => {
             <div className="image-container">
               <div className="image-wrapper">
                 <img src={him} alt="Gerrard Leandro" />
+                <div className="button-container">
+                  <button type="button" onClick={() => handleClick("HIM")}>
+                    ABOUT HIM
+                  </button>
+                </div>
               </div>
             </div>
             <p>
@@ -34,6 +46,11 @@ const Intro = () => {
             <div className="image-container">
               <div className="image-wrapper">
                 <img src={her} alt="Dianne Anna" />
+                <div className="button-container">
+                  <button type="button" onClick={() => "HER"}>
+                    ABOUT HER
+                  </button>
+                </div>
               </div>
             </div>
             <p>
@@ -91,6 +108,7 @@ const Box = styled.div`
     .image-wrapper {
       margin: -1px;
       overflow: hidden;
+      position: relative;
     }
 
     img {
@@ -105,7 +123,65 @@ const Box = styled.div`
       filter: brightness(50%);
       transform: scale(1.05);
       cursor: pointer;
-      border: 2px solid red;
+    }
+
+    .button-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .button-container button {
+      appearance: none;
+      background-color: transparent;
+      border: 2px solid white;
+      box-sizing: border-box;
+      color: white;
+      cursor: pointer;
+      display: inline-block;
+      font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+        "Segoe UI Symbol";
+      font-size: 16px;
+      font-weight: 600;
+      line-height: normal;
+      margin: 0;
+      min-height: 60px;
+      min-width: 0;
+      outline: none;
+      padding: 16px 24px;
+      text-align: center;
+      text-decoration: none;
+      transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      width: 100%;
+      will-change: transform;
+    }
+
+    .button-container button:disabled {
+      pointer-events: none;
+    }
+
+    .button-container button:hover {
+      color: #fff;
+      background-color: #f0394d;
+      box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+      transform: translateY(-2px);
+    }
+
+    .button-container button:active {
+      box-shadow: none;
+      transform: translateY(0);
+    }
+
+    .image-wrapper:hover .button-container {
+      opacity: 1;
     }
   }
 

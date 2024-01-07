@@ -32,7 +32,9 @@ const Footer = () => {
           marginBottom: "180px",
         }}
       >
-        <button className={styles.rsvpButton}>RSVP</button>
+        <div>
+          <button className={styles.rsvpButton}>RSVP</button>
+        </div>
       </div>
 
       <div className={styles.Container}>
