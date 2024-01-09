@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import styles from "./Friend.module.css";
+import styles from "./Cards.module.css";
 import image1 from "../../../../Assets/accomodation.jpg";
 import image2 from "../../../../Assets/the-wedding-1a.jpg";
 import image3 from "../../../../Assets/the-wedding-4a.jpg";
 
-const Friend = () => {
+const Cards = () => {
   return (
     <>
-      <FriendsContainer>
+      <CardContainer>
         <div className={styles.text}>
           <h1>THE WEDDING</h1>
           <p
@@ -71,14 +71,14 @@ const Friend = () => {
             </div>
           </Bride>
         </Box>
-      </FriendsContainer>
+      </CardContainer>
     </>
   );
 };
 
-export default Friend;
+export default Cards;
 
-const FriendsContainer = styled.div`
+const CardContainer = styled.div`
   max-width: 1140px;
   margin: 5rem auto 2rem auto;
   padding: 0 15px;
